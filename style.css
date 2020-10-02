@@ -1,0 +1,711 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.countNum
+{
+    font-size: 10px;
+    color: aliceblue;
+}
+.container1 
+{
+    padding: 2px 2px 2px 2px;
+}
+/* Row 1 CSS */
+.row1
+{
+    padding: 5px;
+    display: flex;
+    background-image: linear-gradient(red, yellow);
+    position: relative;
+    width: 100%;
+}
+.col-8
+{
+    margin-top: 2px;
+    text-align: left;
+    width: 66%;
+    padding: 6px;
+}
+
+.col-8 li
+{
+    list-style-type: none; 
+    cursor: pointer;
+}
+.col-8 li a 
+{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.col-8 li a:hover
+{
+    color: green;
+}
+.col-8 li a:active
+{
+    color: indigo;
+}
+#check1
+{
+    display: none;
+}
+#check2
+{
+    display: none;
+}
+.checkbtn1
+{
+    font-size: 22px;
+    color: white;
+    float: right;
+    margin-right: 20px;
+    display: none;
+}
+.col-4 li
+{
+    text-decoration: none;
+    list-style-type: none;
+}
+.col-4 
+{
+    margin-top: 2px;
+    text-align: right;
+    vertical-align: bottom;
+    width: 34%;
+    padding-right: 10px;
+}
+.col-4 li a 
+{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+.col-4 li a:hover 
+{
+    color: khaki;
+}
+
+/* Row 2 CSS */
+.row2
+{
+    padding-top: 5px;
+    display: flex;
+    background-image: linear-gradient(rgba(0,24,255,0.1), rgba(0,0,255,0.1)), url(images/headback.jpg);
+}
+.col-10
+{
+    text-align: center;
+    width: 84%;
+}
+.col-2
+{
+    text-align: center;
+    width: 16%;
+}
+.col-2 img 
+{
+    height: auto;
+    width: 150px;
+    border-radius: 50%;
+}
+.col-10 h1
+{
+    background: transparent;
+    color: white;
+    font-size: 45px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: auto;
+}
+.col-10 h3
+{
+    font-size: 35px;
+    color: white;
+    background: transparent;
+}
+/* Row 3 CSS */
+.row3
+{
+    padding: 5px;
+    display: flex;
+    background-image: linear-gradient(yellow, rgb(38, 216, 38));
+}
+.col-12 
+{
+    width: 100%;
+    margin: auto;
+    text-align: right;
+}
+.col-12 li 
+{
+    list-style-type: none;
+    padding-right: 20px;
+}
+.col-12 li a 
+{
+    text-decoration: none;
+    padding: 8px 12px;
+    color: white;
+    font-size: 18px;
+}
+.col-12 li a:hover
+{
+    color: tomato;
+}
+.col-12 li a:active
+{
+    color: violet;
+}
+/* End of Head  */
+
+/* Starting of Body  */
+.container2
+{
+    margin: 2px;
+    background-image: linear-gradient(rgba(0,24,255,0.1), rgba(0,0,255,0.1)), url(images/pdpu_arial.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Row 4 CSS  */
+.row4
+{
+    display: flex;
+    padding: 5px;
+}
+.col_3
+{
+    width: 20%;
+}
+.col_3 img 
+{
+    height: 280px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 30%;
+    padding: 10px;
+    background: transparent;
+}
+.col_3 img:hover
+{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.col_6
+{
+    width: 60%;
+}
+.box_1
+{
+    display: flex;
+}
+.box_2
+{
+    display: flex;
+}
+/* Applying Keyframes to the images */
+.box1 img 
+{
+    height: 320px;
+    width: 450px;
+    position: relative;
+    animation-name: animation1;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    border-radius: 10%;
+    padding: 5px;
+    cursor: pointer;
+}
+@keyframes animation1 
+{
+    0%   {left:0px; top:0px;}
+    25%  {left:450px; top:0px;}
+    50%  {left:450px; top:320px;}
+    75%  {left:0px; top:320px;}
+    100% {left:0px; top:0px;}
+}
+.box2 img 
+{
+    height: 320px;
+    width: 450px;
+    position: relative;
+    animation-name: animation2;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 10%;
+    padding: 5px;
+}
+@keyframes animation2 
+{
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:320px;}
+    50%  {left:-450px; top:320px;}
+    75%  {left:-450px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+.box3 img 
+{
+    height: 320px;
+    width: 450px;
+    position: relative;
+    animation-name: animation3;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 10%;
+    padding: 5px;
+}
+@keyframes animation3 
+{
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:-320px;}
+    50%  {left:450px; top:-320px;}
+    75%  {left:450px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+.box4 img
+{
+    height: 320px;
+    width: 450px;
+    position: relative;
+    animation-name: animation4;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 10%;
+    padding: 5px;
+}
+@keyframes animation4 
+{
+    0%   {left:0px; top:0px;}
+    25%  {left:-450px; top:0px;}
+    50%  {left:-450px; top:-320px;}
+    75%  {left:0px; top:-320px;}
+    100% {left:0px; top:0px;}
+}
+/* Container 3 CSS */
+.container3
+{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+.container3 h1
+{
+    padding: 30px;
+    color: blueviolet;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+.ro
+{
+    display: flex;
+}
+.column-3
+{
+    height: 400px;
+    width: 25%;
+    padding: 10px;
+    cursor: pointer;
+}
+.column-3 img 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+.column-3 h5 
+{
+    color: blue;
+    font-size: 22px;
+    margin: 5px;
+}
+.column-3 p 
+{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/* Container 4 CSS */
+.container4
+{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+.roo
+{
+    display: flex;
+    background-color: rgb(175, 143, 14);
+    height: auto;
+}
+.column-4
+{
+    cursor: pointer;
+    width: 25%;
+    background-color: rgb(14, 118, 126);
+}
+.column-4 h1 
+{
+    line-height: 120px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+.column-4:hover
+{
+    background-color: rgb(10, 77, 54);
+}
+
+/* Next Container  */
+.container5
+{
+    height: auto;
+    width: 100%;
+    padding: 20px 60px;
+    background-color: rgb(73, 71, 71);
+}
+.rooo
+{
+    display: flex;
+    height: auto;
+}
+.column-5
+{
+    width: 25%;
+}
+.column-5 h4 
+{
+    line-height: 80px;
+    vertical-align: middle;
+    text-align: left;
+    font-weight: bolder;
+    color: rgb(0, 173, 216);
+    font-size: 24px;
+}
+.column-5 ul 
+{
+    list-style-type: none;
+    display: block;
+}
+.column-5 ul li 
+{
+    text-align: left;
+}
+.column-5 ul li a 
+{
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: white;
+}
+.column-5 ul li a:hover 
+{
+    color: violet;
+}
+.column-5 p 
+{
+    color: white;
+    line-height: 25px;
+}
+
+/* Section Footer */
+.footer
+{
+    padding: 5px 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 51, 0);
+}
+.footer h3 
+{
+    font-style: italic ;
+}
+
+/********************************************************** Media Query************************************************************************/
+@media only screen and (max-width: 1000px)
+{
+    .col-2 img 
+    {
+        height: auto;
+        width: 80px;
+        border-radius: 50%;
+    }
+    .col-2 
+    {
+        width: 90px;
+    }
+    .col-10 h1
+    {
+        font-size: 30px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: auto;
+    }
+    .col-10 h3
+    {
+        font-size: 24px;
+    }
+    .row1
+    {
+        padding: 0;
+        display: block;
+    }
+    .col-8
+    {
+        display: none;
+    }
+    .col-4 
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .col-12 ul 
+    {
+        top: 160px;
+        position: absolute;
+        width: 100vw;
+        background-image: linear-gradient(rgb(255, 251, 0), tomato);
+        height: 275px;
+        left: -100%;
+        transition: all 0.5s;
+        z-index: 1000;
+    }
+    .col-12 ul li 
+    {
+        text-align: center;
+    }
+    .col-12 ul li a
+    {
+        display: block;
+        text-align: center;
+    }
+    .row3
+    {
+        padding: 0;
+    }
+    .checkbtn1
+    {
+        display: block;
+    }
+    #check1:checked ~ ul 
+    {
+        left: 0;
+    }
+    #check2:checked ~ .col-8 ul
+    {
+        left: 0;
+    }
+    .col_6
+    {
+        display: none;
+    }
+    .row4
+    {
+        text-align: center;
+    }
+    .col_3
+    {
+        width: 50%;
+    }
+    .col_3 img  
+    {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        border-radius: 10%;
+        padding: 5px;
+    }
+    .logo1 img 
+    {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        animation-name: animation1;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        border-radius: 10%;
+        padding: 5px;
+        cursor: pointer;
+    }
+    @keyframes animation1 
+    {
+        0%   {left:0px; top:0px;}
+        25%  {left:100%; top:0px;}
+        50%  {left:100%; top:250px;}
+        75%  {left:0px; top:250px;}
+        100% {left:0px; top:0px;}
+    }
+    .logo2 img 
+    {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        animation-name: animation2;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        border-radius: 10%;
+        padding: 5px;
+        cursor: pointer;
+    }
+    @keyframes animation2 
+    {
+        0%   {left:0px; top:0px;}
+        25%  {left:0; top:-250px;}
+        50%  {left:100%; top:-250px;}
+        75%  {left:100%; top:0;}
+        100% {left:0px; top:0px;}
+    }
+    .logo3 img 
+    {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        animation-name: animation3;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        border-radius: 10%;
+        padding: 5px;
+        cursor: pointer;
+    }
+    @keyframes animation3 
+    {
+        0%   {left:0px; top:0px;}
+        25%  {left:0; top:250px;}
+        50%  {left:-100%; top:250px;}
+        75%  {left:-100%; top:0;}
+        100% {left:0px; top:0px;}
+    }
+    .logo4 img 
+    {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        animation-name: animation4;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        border-radius: 10%;
+        padding: 5px;
+        cursor: pointer;
+    }
+    @keyframes animation4 
+    {
+        0%   {left:0px; top:0px;}
+        25%  {left:-100%; top:0px;}
+        50%  {left:-100%; top:-250px;}
+        75%  {left:0px; top:-250px;}
+        100% {left:0px; top:0px;}
+    }
+    .column-4 h1 
+    {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 850px)
+{
+    .col-12 ul 
+    {
+        top: 190px;
+    }
+}
+@media only screen and (max-width: 800px)
+{
+    .ro 
+    {
+        display: block;
+    }
+    .column-3
+    {
+        width: 100%;
+        height: auto;
+    }
+    .rooo
+    {
+        display: block;
+    }
+    .roo
+    {
+        display: block;
+    }
+    .column-4
+    {
+      width: 100%;
+    }
+    .column-5
+    {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px)
+{
+    .col-10 h1 
+    {
+        font-size: 20px;
+        padding: 0;
+    }
+    .col-10 h3 
+    {
+        font-size: 18px;
+    }
+    .col-12 ul 
+    {
+        top: 160px;
+    }
+}
+@media only screen and (max-width: 400px)
+{
+    .row4 img 
+    {
+        height: 180px;
+        width: 180px;
+    }
+    @keyframes animation1 
+    {
+        0%   {left:0px; top:0px;}
+        25%  {left:100%; top:0px;}
+        50%  {left:100%; top:230px;}
+        75%  {left:0px; top:230px;}
+        100% {left:0px; top:0px;}
+    }
+    @keyframes animation2 
+    {
+        0%   {left:0px; top:0px;}
+        25%  {left:0; top:-230px;}
+        50%  {left:100%; top:-230px;}
+        75%  {left:100%; top:0;}
+        100% {left:0px; top:0px;}
+    }
+    @keyframes animation3 
+    {
+        0%   {left:0px; top:0px;}
+        25%  {left:0; top:230px;}
+        50%  {left:-100%; top:230px;}
+        75%  {left:-100%; top:0;}
+        100% {left:0px; top:0px;}
+    }
+    @keyframes animation4 
+    {
+        0%   {left:0px; top:0px;}
+        25%  {left:-100%; top:0px;}
+        50%  {left:-100%; top:-230px;}
+        75%  {left:0px; top:-230px;}
+        100% {left:0px; top:0px;}
+    }
+
+}
